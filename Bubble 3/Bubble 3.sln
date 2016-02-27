@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubble 3.CSharp.Plugins", "Bubble 3.CSharp.Plugins.csproj", "{95CDC103-07EE-6CDE-ECEB-206DD679C4DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubble 3.CSharp", "Bubble 3.CSharp.csproj", "{21F7BA76-318B-28F6-02D2-4842AC2AEB27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95CDC103-07EE-6CDE-ECEB-206DD679C4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CDC103-07EE-6CDE-ECEB-206DD679C4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CDC103-07EE-6CDE-ECEB-206DD679C4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CDC103-07EE-6CDE-ECEB-206DD679C4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F7BA76-318B-28F6-02D2-4842AC2AEB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F7BA76-318B-28F6-02D2-4842AC2AEB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F7BA76-318B-28F6-02D2-4842AC2AEB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F7BA76-318B-28F6-02D2-4842AC2AEB27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

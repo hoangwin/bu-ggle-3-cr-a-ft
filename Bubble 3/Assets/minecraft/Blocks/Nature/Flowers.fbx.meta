@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 81a9d80da4bd9f94dba61a6044d5d8f0
+timeCreated: 1456364716
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Allium
+    100002: Allium_2
+    100004: Bend
+    100006: Blue_Orchid
+    100008: Blue_Orchid_2
+    100010: Dandelion
+    100012: Dandelion_2
+    100014: Flowers
+    100016: //RootNode
+    100018: Houstonia
+    100020: Houstonia_2
+    100022: Orange_Tulip
+    100024: Orange_Tulip_2
+    100026: Oxeye_Daisy
+    100028: Oxeye_Daisy_2
+    100030: Paeonia
+    100032: Paeonia_2
+    100034: Pink_Tulip
+    100036: Pink_Tulip_2
+    100038: Plant_Pot
+    100040: Red_Tulip
+    100042: Red_Tulip_2
+    100044: Rose
+    100046: Rose_2
+    100048: White_Tulip
+    100050: White_Tulip_2
+    400000: Allium
+    400002: Allium_2
+    400004: Bend
+    400006: Blue_Orchid
+    400008: Blue_Orchid_2
+    400010: Dandelion
+    400012: Dandelion_2
+    400014: Flowers
+    400016: //RootNode
+    400018: Houstonia
+    400020: Houstonia_2
+    400022: Orange_Tulip
+    400024: Orange_Tulip_2
+    400026: Oxeye_Daisy
+    400028: Oxeye_Daisy_2
+    400030: Paeonia
+    400032: Paeonia_2
+    400034: Pink_Tulip
+    400036: Pink_Tulip_2
+    400038: Plant_Pot
+    400040: Red_Tulip
+    400042: Red_Tulip_2
+    400044: Rose
+    400046: Rose_2
+    400048: White_Tulip
+    400050: White_Tulip_2
+    2300000: Allium_2
+    2300002: Blue_Orchid_2
+    2300004: Dandelion_2
+    2300006: Houstonia_2
+    2300008: Orange_Tulip_2
+    2300010: Oxeye_Daisy_2
+    2300012: Paeonia_2
+    2300014: Pink_Tulip_2
+    2300016: Plant_Pot
+    2300018: Red_Tulip_2
+    2300020: Rose_2
+    2300022: White_Tulip_2
+    3300000: Allium_2
+    3300002: Blue_Orchid_2
+    3300004: Dandelion_2
+    3300006: Houstonia_2
+    3300008: Orange_Tulip_2
+    3300010: Oxeye_Daisy_2
+    3300012: Paeonia_2
+    3300014: Pink_Tulip_2
+    3300016: Plant_Pot
+    3300018: Red_Tulip_2
+    3300020: Rose_2
+    3300022: White_Tulip_2
+    4300000: Rose_2
+    4300002: Allium_2
+    4300004: Houstonia_2
+    4300006: Paeonia_2
+    4300008: Oxeye_Daisy_2
+    4300010: Orange_Tulip_2
+    4300012: Pink_Tulip_2
+    4300014: White_Tulip_2
+    4300016: Red_Tulip_2
+    4300018: Dandelion_2
+    4300020: Blue_Orchid_2
+    4300022: Plant_Pot
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

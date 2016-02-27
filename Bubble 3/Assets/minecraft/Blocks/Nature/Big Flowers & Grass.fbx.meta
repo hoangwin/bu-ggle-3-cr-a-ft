@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 1c0faf3bb2ae5e34e8456f30afebf540
+timeCreated: 1456364712
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bend
+    100002: //RootNode
+    100004: CrossDoubleTallGrass
+    100006: CrossDoubleTallGrass_2
+    100008: CrossTallFern
+    100010: CrossTallFern_2
+    100012: CrossTallGrass
+    100014: CrossTallGrass_2
+    100016: DoubleTallGrass
+    100018: DoubleTallGrass_2
+    100020: Sunflower
+    100022: Sunflower_2
+    100024: Tall_Fern
+    100026: Tall_Fern_2
+    100028: Tall_Paeonia
+    100030: Tall_Paeonia_2
+    100032: Tall_Rose
+    100034: Tall_Rose_2
+    100036: Tall_Syringa
+    100038: Tall_Syringa_2
+    100040: TallGrass
+    100042: TallGrass_2
+    400000: Bend
+    400002: //RootNode
+    400004: CrossDoubleTallGrass
+    400006: CrossDoubleTallGrass_2
+    400008: CrossTallFern
+    400010: CrossTallFern_2
+    400012: CrossTallGrass
+    400014: CrossTallGrass_2
+    400016: DoubleTallGrass
+    400018: DoubleTallGrass_2
+    400020: Sunflower
+    400022: Sunflower_2
+    400024: Tall_Fern
+    400026: Tall_Fern_2
+    400028: Tall_Paeonia
+    400030: Tall_Paeonia_2
+    400032: Tall_Rose
+    400034: Tall_Rose_2
+    400036: Tall_Syringa
+    400038: Tall_Syringa_2
+    400040: TallGrass
+    400042: TallGrass_2
+    2300000: CrossDoubleTallGrass_2
+    2300002: CrossTallFern_2
+    2300004: CrossTallGrass_2
+    2300006: DoubleTallGrass_2
+    2300008: Sunflower_2
+    2300010: Tall_Fern_2
+    2300012: Tall_Paeonia_2
+    2300014: Tall_Rose_2
+    2300016: Tall_Syringa_2
+    2300018: TallGrass_2
+    3300000: CrossDoubleTallGrass_2
+    3300002: CrossTallFern_2
+    3300004: CrossTallGrass_2
+    3300006: DoubleTallGrass_2
+    3300008: Sunflower_2
+    3300010: Tall_Fern_2
+    3300012: Tall_Paeonia_2
+    3300014: Tall_Rose_2
+    3300016: Tall_Syringa_2
+    3300018: TallGrass_2
+    4300000: Sunflower_2
+    4300002: CrossTallFern_2
+    4300004: Tall_Fern_2
+    4300006: Tall_Syringa_2
+    4300008: Tall_Rose_2
+    4300010: Tall_Paeonia_2
+    4300012: CrossDoubleTallGrass_2
+    4300014: DoubleTallGrass_2
+    4300016: CrossTallGrass_2
+    4300018: TallGrass_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: e9be36cee0deb2245ae9b3b611545dd4
+timeCreated: 1456364729
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Apple
+    100002: Bread
+    100004: Cooked_Beef
+    100006: Cooked_Chicken
+    100008: Cooked_Porkchop
+    100010: //RootNode
+    100012: Golden_Apple
+    100014: Melon
+    100016: Raw_Beef
+    100018: Raw_Chicken
+    100020: Raw_Porkchop
+    100022: Thin_Melon
+    400000: Apple
+    400002: Bread
+    400004: Cooked_Beef
+    400006: Cooked_Chicken
+    400008: Cooked_Porkchop
+    400010: //RootNode
+    400012: Golden_Apple
+    400014: Melon
+    400016: Raw_Beef
+    400018: Raw_Chicken
+    400020: Raw_Porkchop
+    400022: Thin_Melon
+    2300000: Apple
+    2300002: Bread
+    2300004: Cooked_Beef
+    2300006: Cooked_Chicken
+    2300008: Cooked_Porkchop
+    2300010: Golden_Apple
+    2300012: Melon
+    2300014: Raw_Beef
+    2300016: Raw_Chicken
+    2300018: Raw_Porkchop
+    2300020: Thin_Melon
+    3300000: Apple
+    3300002: Bread
+    3300004: Cooked_Beef
+    3300006: Cooked_Chicken
+    3300008: Cooked_Porkchop
+    3300010: Golden_Apple
+    3300012: Melon
+    3300014: Raw_Beef
+    3300016: Raw_Chicken
+    3300018: Raw_Porkchop
+    3300020: Thin_Melon
+    4300000: Apple
+    4300002: Golden_Apple
+    4300004: Bread
+    4300006: Raw_Chicken
+    4300008: Cooked_Chicken
+    4300010: Raw_Beef
+    4300012: Cooked_Beef
+    4300014: Raw_Porkchop
+    4300016: Cooked_Porkchop
+    4300018: Melon
+    4300020: Thin_Melon
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
