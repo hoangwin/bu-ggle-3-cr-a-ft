@@ -63,7 +63,8 @@ public class AnimControl : MonoBehaviour {
             mainBUtton2.transform.position = posmainBUtton2;
             mainBUtton3.transform.position = posmainBUtton3;
             mainBUtton4.transform.position = posmainBUtton4;
-            iTween.MoveTo(mainBUtton1, iTween.Hash("x", 4 * Screen.width/5, "time", 0.3, "easeType", "linear", "islocal", true, "oncomplete", "onCompletedMainMenuSHowAds"));
+            //iTween.MoveTo(mainBUtton1, iTween.Hash("x", 4 * Screen.width/5, "time", 0.3, "easeType", "linear", "islocal", true, "oncomplete", "onCompletedMainMenuSHowAds"));
+            iTween.MoveTo(mainBUtton1, iTween.Hash("x", 4 * Screen.width / 5, "time", 0.3, "easeType", "linear", "islocal", true));
             iTween.MoveTo(mainBUtton2, iTween.Hash("x", 4 * Screen.width/5, "time", 0.4, "easeType", "linear", "islocal", true));
             iTween.MoveTo(mainBUtton3, iTween.Hash("x", 4 * Screen.width / 5, "time", 0.5, "easeType", "linear", "islocal", true));
             iTween.MoveTo(mainBUtton4, iTween.Hash("x", 4 * Screen.width / 5, "time", 0.6, "easeType", "linear", "islocal", true, "oncomplete", "onCompletedMainMenu"));

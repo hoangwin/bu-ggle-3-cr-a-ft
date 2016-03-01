@@ -6,11 +6,13 @@ public class MainMenu : MonoBehaviour {
 	// Use this for initialization
 
 	public static MainMenu instance;
-    public GameObject background;
-	void Start () {
+    public Sprite m_SpriteOn;
+    public Sprite m_SpriteOff;
+    public Image m_ImageSound;
+    void Start () {
 		DEF.Init ();
 		DEF.ScaleAnchorGui();
-		ScoreControl.loadGame();
+		ScoreManager.Load();
 		setBGButton ();
 		instance = this;
         if (SoundEngine.soundclick == null)
@@ -18,8 +20,9 @@ public class MainMenu : MonoBehaviour {
             SoundEngine.soundclick = GameObject.Find("SoundClick");
             DontDestroyOnLoad(SoundEngine.soundclick);
         }
-        DEF.scaleFixImagetoScreen(background);
-        AnimControl.instance.MenuBegin();
+        //  DEF.scaleFixImagetoScreen(background);
+        if (AnimControl.instance != null)
+            AnimControl.instance.MenuBegin();
         //Debug.Log("aaaaaaaaa");
 	}	
 	// Update is called once per frame
@@ -31,12 +34,13 @@ public class MainMenu : MonoBehaviour {
 	}
 	public void setBGButton()
 	{
-		GameObject bgButton = GameObject.Find("LabelSoundOnOff");
-        Text target = bgButton.GetComponentInChildren<Text>();
-		if(SoundEngine.isSound)
-            target.text = "Âm Thanh : Bật";
+	//	GameObject bgButton = GameObject.Find("LabelSoundOnOff");
+    //    Text target = bgButton.GetComponentInChildren<Text>();
+
+        if (SoundEngine.isSound)
+            m_ImageSound.overrideSprite = m_SpriteOn;//  target.text = "Âm Thanh : Bật";
 		else
-            target.text = "Âm Thanh : Tắt";
-		//target.MakePixelPerfect();
-	}
+            m_ImageSound.overrideSprite = m_SpriteOff;//target.text = "Âm Thanh : Tắt";
+                                                     //target.MakePixelPerfect();
+    }
 }

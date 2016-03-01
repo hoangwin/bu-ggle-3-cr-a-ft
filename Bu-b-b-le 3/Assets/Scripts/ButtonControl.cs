@@ -12,21 +12,21 @@ public class ButtonControl : MonoBehaviour {
 	void Update () {
 	
 	}
-	public void PuzzleButtonPress()
+	public void ButtonPlayGamePress()
 	{
         AnimControl.instance.menuEnd();
         SoundEngine.playSound("SoundClick");
 		//Application.LoadLevel("SelectLevel");
 	
 	}
-    public void MoreGame()
+    public void ButtonMoreGame()
 	{
         //SoundEngine.playSound("SoundClick");
 		//Application.LoadLevel("GamePlayScence");
         //Application.LoadLevel("About");
         Application.OpenURL("http://aegamemobile.com");
 	}
-    public void ExitButtonPress()
+    public void ButtonExitButtonPress()
     {
         Application.Quit();
     }
@@ -37,7 +37,7 @@ public class ButtonControl : MonoBehaviour {
         Application.LoadLevel("MainMenu");
     }
 
-	public void PlayInGamePress()
+	public void ButtonPlayInGamePress()
 	{
         SoundEngine.playSound("SoundClick");
 		GamePlay.changeState (GamePlay.STATE_PLAY);
@@ -45,7 +45,7 @@ public class ButtonControl : MonoBehaviour {
 
 	}
 
-	public void RestartInGamePress()
+	public void ButtonRestartInGamePress()
 	{
         SoundEngine.playSound("SoundClick");
 		GamePlay.instance.restart();
@@ -55,13 +55,8 @@ public class ButtonControl : MonoBehaviour {
 	public void ButtonRatePress()
 	{
         SoundEngine.playSound("SoundClick");
-		Application.OpenURL ("market://details?id=com.flappy.bird.kiwi");
+		Application.OpenURL ("market://details?id=com.lamstudio.bubble.craft");
 		//Application.OpenURL ("http://details?id=com.flappy.bird.kiwi");
-	}
-	public void RankingButtonPress()
-	{
-        SoundEngine.playSound("SoundClick");
-		Application.LoadLevel("Ranking");
 	}
 	
 
@@ -82,18 +77,18 @@ public class ButtonControl : MonoBehaviour {
         }
 	}
 
-	public void ReplayButtonPress()
+	public void ButtonReplayPress()
 	{
         SoundEngine.playSound("SoundClick");
 		GamePlay.instance.restart();
 	}
 
-	public void MainMenuButtonPress()
+	public void ButtonMainMenuPress()
 	{
         SoundEngine.playSound("SoundClick");
 		Application.LoadLevel ("MainMenu");
 	}
-	public void NextButtonPress()
+	public void ButtonNextPress()
 	{
         SoundEngine.playSound("SoundClick");
 		LevelManager.currentLevel++;
@@ -102,114 +97,25 @@ public class ButtonControl : MonoBehaviour {
     
     public void LeftButtonPress()
     {
-        SoundEngine.playSound("SoundClick");
-        SelectLevel.currentpage--;
-        if (SelectLevel.currentpage < 1)
-            SelectLevel.currentpage = SelectLevel.MAX_PAGE;
-      SelectLevel.instance.setAllButton();
+       // SoundEngine.playSound("SoundClick");
+        SelectStage.m_page--;
+        if (SelectStage.m_page < 1)
+            SelectStage.m_page = SelectStage.MAX_PAGE;
+        SelectStage.m_Instance.ChangePage();
     
     }
 
     public void RightButtonPress()
     {
-        SoundEngine.playSound("SoundClick");
-        SelectLevel.currentpage++;
-        if (SelectLevel.currentpage> SelectLevel.MAX_PAGE)
-            SelectLevel.currentpage = 1;
-        SelectLevel.instance.setAllButton();
+        //SoundEngine.playSound("SoundClick");
+        SelectStage.m_page++;
+        if (SelectStage.m_page > SelectStage.MAX_PAGE)
+            SelectStage.m_page = 1;
+        SelectStage.m_Instance.ChangePage();
     }
 
 	//Select 	Level
-	public void LevelButtonPress(int level)
-	{
-        SoundEngine.playSound("SoundClick");
-        level += (SelectLevel.currentpage -1)*20;
-        if (level <= ScoreControl.mUnblockLevel)
-        {
-            LevelManager.currentLevel = level;
-            Application.LoadLevel("GamePlayScence");
-        }
-	}
-	public void LevelButtonPress1()
-	{
-		LevelButtonPress(1);
-	}
-	public void LevelButtonPress2()
-	{
-		LevelButtonPress(2);
-	}
-	public void LevelButtonPress3()
-	{
-		LevelButtonPress(3);
-	}
-	public void LevelButtonPress4()
-	{
-		LevelButtonPress(4);
-	}
-	public void LevelButtonPress5()
-	{
-		LevelButtonPress(5);
-	}
-	public void LevelButtonPress6()
-	{
-		LevelButtonPress(6);
-	}
-	public void LevelButtonPress7()
-	{
-		LevelButtonPress(7);
-	}
-	public void LevelButtonPress8()
-	{
-		LevelButtonPress(8);
-	}
-	public void LevelButtonPress9()
-	{
-		LevelButtonPress(9);
-	}
-	public void LevelButtonPress10()
-	{
-		LevelButtonPress(10);
-	}
-	public void LevelButtonPress11()
-	{
-		LevelButtonPress(11);
-	}
-	public void LevelButtonPress12()
-	{
-		LevelButtonPress(12);
-	}
-	public void LevelButtonPress13()
-	{
-		LevelButtonPress(13);
-	}
-	public void LevelButtonPress14()
-	{
-		LevelButtonPress(14);
-	}
-	public void LevelButtonPress15()
-	{
-		LevelButtonPress(15);
-	}
-	public void LevelButtonPress16()
-	{
-		LevelButtonPress(16);
-	}
-	public void LevelButtonPress17()
-	{
-		LevelButtonPress(17);
-	}
-	public void LevelButtonPress18()
-	{
-		LevelButtonPress(18);
-	}
-	public void LevelButtonPress19()
-	{
-		LevelButtonPress(19);
-	}
-	public void LevelButtonPress20()
-	{
-		LevelButtonPress(20);
-	}
+	
 
 
 

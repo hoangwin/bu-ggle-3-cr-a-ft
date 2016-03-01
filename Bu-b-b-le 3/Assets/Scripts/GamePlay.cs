@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GamePlay : MonoBehaviour {
@@ -31,7 +32,8 @@ public class GamePlay : MonoBehaviour {
 	public static float TimePlayedSubState = 0f;
 	
 	public  Transform m_TransformcurrentBubble;
-	public static int STATE_INIT = 0;
+    public Transform m_TransforPreBubble;
+    public static int STATE_INIT = 0;
 	public static bool isWin = true;
 	//public UILabel LabelLevel;
 	//public UILabel LabelScore;
@@ -44,15 +46,16 @@ public class GamePlay : MonoBehaviour {
 
 		instance = this;
 		//NGUITools.SetActive(PanelOverGame,false);   
-		ScoreControl.Score = 0;
+		ScoreManager.Score = 0;
 		DEF.ScaleAnchorGui();
 		if(LevelManager.currentLevel < 1)
 			LevelManager.currentLevel = 1;
 		if(LevelManager.currentLevel >= 680)
 			LevelManager.currentLevel = 679;
+        
 		LevelManager.getLevel(LevelManager.currentLevel);
         
-        LevelManager.creatNewBubble();
+        LevelManager.creatNewBubbleBegin();
         GameObject.Find("WallBottom").layer = 12;
 		Physics2D.IgnoreLayerCollision (12, 12, true);
 		changeState(STATE_PLAY);
@@ -104,11 +107,13 @@ public class GamePlay : MonoBehaviour {
 			{
 
 				PanelWin.SetActive(true);
-                AdsManager.ShowADS_FULL();
+               
+                    if (ScoreManager.m_LevelUNblock == null)
+                        ScoreManager.Load();
               //  GameObject.Find("LabelScoreWin").GetComponent<UILabel>().text = ScoreControl.Score.ToString();
-                if (ScoreControl.mUnblockLevel == LevelManager.currentLevel)
+                if (ScoreManager.m_LevelUNblock.NUM == LevelManager.currentLevel)
                 {
-                    ScoreControl.mUnblockLevel++;
+                        ScoreManager.m_LevelUNblock.NUM++;
                 }
                 
                 //kiem tra star
@@ -117,30 +122,29 @@ public class GamePlay : MonoBehaviour {
                 if (LevelManager.countbubbleShoot <= LevelManager.star3)
                 {
                     star = 3;
-                    GameObject.Find("Star").GetComponent<SpriteRenderer>().sprite = SpriteStar3;
+                    GameObject.Find("Star").GetComponent<Image>().sprite = SpriteStar3;
                 }
                 else if (LevelManager.countbubbleShoot <= LevelManager.star2)
                 {
                     star =2;
-                    GameObject.Find("Star").GetComponent<SpriteRenderer>().sprite = SpriteStar2;
+                    GameObject.Find("Star").GetComponent<Image>().sprite = SpriteStar2;
                 }
                 else
                 {
                     star =1;
-                    GameObject.Find("Star").GetComponent<SpriteRenderer>().sprite = SpriteStar1;
+                    GameObject.Find("Star").GetComponent<Image>().sprite = SpriteStar1;
                 }
-                //save thanh string
-                //Debug.Log("----------------------");
-                //Debug.Log("LevelManager.star3:" + ScoreControl.strLevelStar);
+                    
 
-                ScoreControl.strLevelStar = ScoreControl.strLevelStar.Insert(LevelManager.currentLevel, star.ToString());
-                //Debug.Log("LevelManager.star2:" + ScoreControl.strLevelStar);
-                ScoreControl.strLevelStar = ScoreControl.strLevelStar.Remove(LevelManager.currentLevel + 1,1);
-                //Debug.Log("LevelManager.star1:" + ScoreControl.strLevelStar);     
-                ScoreControl.saveGame();
+                    //ScoreManager.strLevelStar = ScoreManager.strLevelStar.Insert(LevelManager.currentLevel, star.ToString());
+                  
+                   // ScoreManager.strLevelStar = ScoreManager.strLevelStar.Remove(LevelManager.currentLevel + 1,1);
+                  
+                    ScoreManager.Save();
 
 				changeState(STATE_WIN);
-			}
+                    AdsManager.ShowADS_FULL();
+                }
 			else
 			{
 				PanelOverGame.SetActive(true);
@@ -182,13 +186,15 @@ public class GamePlay : MonoBehaviour {
                 fingerPos = Input.mousePosition;
             }
           //  Debug.Log("fingerPos.y1 : " + fingerPos.y);
-            if (fingerPos.y == 0) // 4.1 || fingerPos.y < -2)
+            if (fingerPos.y == 0 || (fingerPos.y > (9*Screen.height / 10))) // 4.1 || fingerPos.y < -2)
                 return;
-            Debug.Log("aaaa:" + fingerPos.x + "  ,  " + fingerPos.y);
+        
+           
+            
+            //Debug.Log("aaaa:" + fingerPos.x + "  ,  " + fingerPos.y);
             Vector2 posCurrent = Camera.main.WorldToScreenPoint(m_TransformcurrentBubble.position);
             //fingerPos = Camera.main.WorldToScreenPoint(fingerPos);
-            Debug.Log("rrr:" + posCurrent.x + "  ,  " + posCurrent.y);
-
+           
 
             //  Debug.Log("fingerPos.y : " + fingerPos.y);
             fingerPos.x = fingerPos.x - posCurrent.x;// CURRENT_START_Y;
@@ -218,7 +224,7 @@ public class GamePlay : MonoBehaviour {
              LevelManager.currentBubble.transform.eulerAngles = new Vector3(0, 0, angle);
             if (LevelManager.currentBubble.GetComponent<Bubble>().state == Bubble.STATE_BUBBLE_WATING_SHOOT)
             {
-
+             
                 if (Input.GetMouseButtonUp(0) || ((Input.touchCount == 1) && (Input.GetTouch(0).phase == TouchPhase.Ended)))
                 {
                     SoundEngine.playSound("SoundShoot");
@@ -228,6 +234,7 @@ public class GamePlay : MonoBehaviour {
                     LevelManager.currentBubble.GetComponent<Bubble>().currentvelocity = fingerPos;//
                     LevelManager.currentBubble.transform.eulerAngles = new Vector3(0, 0, 0);
                     LevelManager.currentBubble.GetComponent<Bubble>().state = Bubble.STATE_BUBBLE_SHOOT;
+                    iTween.MoveTo(BubblePre, iTween.Hash("x", m_TransformcurrentBubble.position.x,"y", m_TransformcurrentBubble.position.y, "time", 1f));
                 }
             }
         }
@@ -243,11 +250,11 @@ public class GamePlay : MonoBehaviour {
 		PanelWin.SetActive(false);
 		PanelOverGame.SetActive(false);
 		changeState( GamePlay.STATE_PLAY);
-		ScoreControl.Score =0;
+        ScoreManager.Score =0;
 	//	LabelLevel.text = LevelManager.currentLevel.ToString() +"\nLevel";
 		//LabelScore.text ="0\nScore";
         GameObject.Destroy(LevelManager.currentBubble);        
-        LevelManager.creatNewBubble();
+        LevelManager.creatNewBubbleBegin();
 	}
 	public void initGameOver()
 	{
