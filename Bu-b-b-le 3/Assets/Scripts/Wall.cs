@@ -15,13 +15,17 @@ public class Wall : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D orther)
     {
-     //  Debug.Log("Tao day ne");
-       if (orther.gameObject.name.Contains("BubblePrefab") && GamePlay.currentState == GamePlay.STATE_PLAY)
+     
+       if (orther.gameObject.tag.Contains("Bubble") && GamePlay.currentState == GamePlay.STATE_PLAY)
        {
-            GamePlay.TimePlayedSubState = 1f;
-            GamePlay.isWin = false;
-			GamePlay.changeState(GamePlay.STATE_WAITING_WIN_LOSE);
-            SoundEngine.playSound("game_over");
+            if (orther.gameObject.GetComponent<Bubble>().state == Bubble.STATE_BUBBLE_IDE)
+            {
+                Debug.Log("Tao day ne");
+                GamePlay.TimePlayedSubState = 1f;
+                GamePlay.isWin = false;
+                GamePlay.changeState(GamePlay.STATE_WAITING_WIN_LOSE);
+                SoundEngine.playSound("game_over");
+            }
 		
 		}
     }
