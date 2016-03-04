@@ -37,6 +37,9 @@ public class SoundEngine : MonoBehaviour
     
     public static void playBubbleEffect(AudioClip clip)
     {
+        if (!isSoundSFX)
+            return;
+
         if (clip == instance.m_destroyBubble)
         {
             if (Time.time - instance.m_timePlaysound1 > 0.1f)
@@ -53,6 +56,8 @@ public class SoundEngine : MonoBehaviour
     }
     public static void playCommondEffect(AudioClip clip)
     {
+        if (!isSoundSFX)
+            return;
         instance.m_audioSource2.PlayOneShot(clip);
     }
     public static void stop()

@@ -24,7 +24,7 @@ public class SelectStage : MonoBehaviour {
         m_Instance = this;
         if (ScoreManager.m_LevelUNblock == null)
             ScoreManager.Load();
-        m_page = 0;
+        m_page = (ScoreManager.m_LevelUNblock.NUM -1)/20;
         m_isItween = false;
         SelectStage.m_Instance.m_TextPage.text = (SelectStage.m_page + 1).ToString() + "/" + MAX_PAGE.ToString();
         ChangePage();
