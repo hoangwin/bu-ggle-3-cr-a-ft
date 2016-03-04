@@ -15,11 +15,7 @@ public class MainMenu : MonoBehaviour {
 		ScoreManager.Load();
 		setBGButton ();
 		instance = this;
-        if (SoundEngine.soundclick == null)
-        {
-            SoundEngine.soundclick = GameObject.Find("SoundClick");
-            DontDestroyOnLoad(SoundEngine.soundclick);
-        }
+       
         //  DEF.scaleFixImagetoScreen(background);
         if (AnimControl.instance != null)
             AnimControl.instance.MenuBegin();
@@ -37,7 +33,7 @@ public class MainMenu : MonoBehaviour {
 	//	GameObject bgButton = GameObject.Find("LabelSoundOnOff");
     //    Text target = bgButton.GetComponentInChildren<Text>();
 
-        if (SoundEngine.isSound)
+        if (SoundEngine.isSoundSFX)
             m_ImageSound.overrideSprite = m_SpriteOn;//  target.text = "Âm Thanh : Bật";
 		else
             m_ImageSound.overrideSprite = m_SpriteOff;//target.text = "Âm Thanh : Tắt";

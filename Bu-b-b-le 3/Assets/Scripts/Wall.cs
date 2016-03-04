@@ -24,7 +24,7 @@ public class Wall : MonoBehaviour {
                 GamePlay.TimePlayedSubState = 1f;
                 GamePlay.isWin = false;
                 GamePlay.changeState(GamePlay.STATE_WAITING_WIN_LOSE);
-                SoundEngine.playSound("game_over");
+                SoundEngine.playCommondEffect(SoundEngine.instance.m_lose);
             }
 		
 		}

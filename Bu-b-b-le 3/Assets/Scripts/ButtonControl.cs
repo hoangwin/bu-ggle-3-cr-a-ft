@@ -15,10 +15,10 @@ public class ButtonControl : MonoBehaviour {
 	public void ButtonPlayGamePress()
 	{
         AnimControl.instance.menuEnd();
-        SoundEngine.playSound("SoundClick");
-		//Application.LoadLevel("SelectLevel");
-	
-	}
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        //Application.LoadLevel("SelectLevel");
+
+    }
     public void ButtonMoreGame()
 	{
         //SoundEngine.playSound("SoundClick");
@@ -33,43 +33,43 @@ public class ButtonControl : MonoBehaviour {
     public void BackButtonPress()
     {
 
-        SoundEngine.playSound("SoundClick");
-        Application.LoadLevel("MainMenu");
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        GamePlay.instance.ChangeToBlack_MaiMENU();
     }
 
 	public void ButtonPlayInGamePress()
 	{
-        SoundEngine.playSound("SoundClick");
-		GamePlay.changeState (GamePlay.STATE_PLAY);
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        GamePlay.changeState (GamePlay.STATE_PLAY);
 		GamePlay.instance.PanelPause.SetActive(false);
 
 	}
 
 	public void ButtonRestartInGamePress()
 	{
-        SoundEngine.playSound("SoundClick");
-		GamePlay.instance.restart();
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        GamePlay.instance.restart();
 		//Application.LoadLevel("GamePlayScence");
 		//Debug.Log ("aaaaaaaaaa");
 	}
 	public void ButtonRatePress()
 	{
-        SoundEngine.playSound("SoundClick");
-		Application.OpenURL ("market://details?id=com.lamstudio.bubble.craft");
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        Application.OpenURL ("market://details?id=com.lamstudio.bubble.craft");
 		//Application.OpenURL ("http://details?id=com.flappy.bird.kiwi");
 	}
 	
 
 	public void ButtonSoundPress()
 	{
-		SoundEngine.isSound = !SoundEngine.isSound;
-        SoundEngine.playSound("SoundClick");
-		MainMenu.instance.setBGButton ();
+		SoundEngine.isSoundSFX = !SoundEngine.isSoundSFX;
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        MainMenu.instance.setBGButton ();
 	}
 
 	public void IGMButtonPress()
 	{
-        SoundEngine.playSound("SoundClick");
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
         if (GamePlay.currentState == GamePlay.STATE_PLAY)
         {
             GamePlay.changeState(GamePlay.STATE_PAUSE);
@@ -79,19 +79,19 @@ public class ButtonControl : MonoBehaviour {
 
 	public void ButtonReplayPress()
 	{
-        SoundEngine.playSound("SoundClick");
-		GamePlay.instance.restart();
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        GamePlay.instance.restart();
 	}
 
 	public void ButtonMainMenuPress()
 	{
-        SoundEngine.playSound("SoundClick");
-		Application.LoadLevel ("MainMenu");
-	}
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        GamePlay.instance.ChangeToBlack_MaiMENU();
+    }
 	public void ButtonNextPress()
 	{
-        SoundEngine.playSound("SoundClick");
-		LevelManager.currentLevel++;
+        SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+        LevelManager.currentLevel++;
 		GamePlay.instance.restart();
 	}
     

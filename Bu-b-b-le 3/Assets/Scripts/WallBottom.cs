@@ -20,7 +20,7 @@ public class WallBottom : MonoBehaviour {
             if (orther.gameObject.GetComponent<Bubble>().state == Bubble.STATE_BUBBLE_DROP)
             {
                 orther.gameObject.GetComponent<Bubble>().destroyAnim();
-                Debug.Log("here");
+              //  Debug.Log("here");
             }
         }
     }
