@@ -15,6 +15,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import com.google.ads.AdRequest.ErrorCode;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import com.facebook.ads.*;
 
@@ -25,7 +31,7 @@ public class UnityPlayerActivity extends Activity
 
 	protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 	public static com.facebook.ads.InterstitialAd interstitialFaceBook;
-
+	private InterstitialAd interstitialAdmob;
 	// Setup activity layout
 	@Override protected void onCreate (Bundle savedInstanceState)
 	{
@@ -47,7 +53,7 @@ public class UnityPlayerActivity extends Activity
 	}
 	public void showBannerFaceBook() {
 		adViewFaceBook = new com.facebook.ads.AdView(this,
-				"1671197079789220_1671222949786633",
+				"xxx",
 				com.facebook.ads.AdSize.BANNER_HEIGHT_50);
 		Collection<String> TestDevices = new ArrayList<String>();
 		TestDevices.add("403706e6d09a7de076ce069c9bc804ec");
@@ -103,7 +109,7 @@ public class UnityPlayerActivity extends Activity
 						.addTestDevice("090021134d2dc35fe0e3dceb8b361de1");
 
 				interstitialFaceBook = new com.facebook.ads.InterstitialAd(
-						instance, "720415844726081_720416161392716");
+						instance, "1258383310844054_1258384147510637");
 
 				interstitialFaceBook
 						.setAdListener(new com.facebook.ads.InterstitialAdListener() {
@@ -112,7 +118,8 @@ public class UnityPlayerActivity extends Activity
 									com.facebook.ads.AdError error) {
 								Log.e("TOAN",
 										"onError: " + error.getErrorMessage());
-								instance.ShowStarAppFull();
+								//instance.ShowStarAppFull();
+								instance.ShowAdmobFull();
 							}
 
 							@Override
@@ -146,24 +153,24 @@ public void ShowAdmobFull()// goi tu ben unity sang
 		UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {							
-				interstitial = new InterstitialAd(instance);
-				interstitial.setAdUnitId("xxx");
+				interstitialAdmob = new InterstitialAd(instance);
+				interstitialAdmob.setAdUnitId("ca-app-pub-7413680112188055/6276403325");
 				// Create ad request.
 				AdRequest adRequest = new AdRequest.Builder().build();
 				// Begin loading your interstitial.
-				interstitial.loadAd(adRequest);
+				interstitialAdmob.loadAd(adRequest);
 
-				interstitial.setAdListener(new AdListener() {
+				interstitialAdmob.setAdListener(new AdListener() {
 					@Override
 					public void onAdLoaded() {
-						interstitial.show();
+						interstitialAdmob.show();
 						Log.d("Admob onAdLoaded", "onAdLoaded");
 					}
 
 					public void onAdFailedToLoad(int errorCode) {
 						Log.d("Admob onAdFailedToLoad", "onAdFailedToLoad");
 						//instance.ShowChartboost();
-						ShowStarAppFull();
+					//	ShowStarAppFull();
 					}
 
 					public void onAdOpened() {
@@ -215,7 +222,7 @@ public void ShowAdmobFull()// goi tu ben unity sang
 					}
 					@Override
 					public void onAdFailedToLoad(int errorCode){
-						instance.showStartAppBanner();
+						//instance.showStartAppBanner();
 						adView.destroy();
 		                adView.setVisibility(View.GONE);
 					 }
