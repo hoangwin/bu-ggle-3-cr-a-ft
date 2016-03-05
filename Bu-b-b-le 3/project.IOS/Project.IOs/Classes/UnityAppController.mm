@@ -201,7 +201,7 @@ bool	_supportsMSAA			= false;
 -(void) showAdmobFullAds
 {
     interstitial_ = [[GADInterstitial alloc] init];
-    interstitial_.adUnitID = @" ca-app-pub-7342700401302892/9849991765";
+    interstitial_.adUnitID = @"ca-app-pub-7342700401302892/5100220164";
 
     [interstitial_ setDelegate:self];
    // interstitial_.delegate = self;
