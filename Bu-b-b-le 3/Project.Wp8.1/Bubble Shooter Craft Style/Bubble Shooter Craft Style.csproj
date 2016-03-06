@@ -17,7 +17,6 @@
     <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>WSATestCertificate.pfx</PackageCertificateKeyFile>
     <PlatformShortName>$(Platform)</PlatformShortName>
-    
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -85,13 +84,11 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
-    <SubType>Designer</SubType>
+      <SubType>Designer</SubType>
     </AppxManifest>
   </ItemGroup>
-
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
     </ApplicationDefinition>
@@ -126,6 +123,9 @@
     <Reference Include="UnityEngine">
       <HintPath>.\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="VungleSDK">
+      <HintPath>..\ads\vungle-windows-sdk-1.1.6\VungleSDK_wp8.1\VungleSDK.winmd</HintPath>
+    </Reference>
     <Reference Include="WinRTLegacy">
       <HintPath>.\WinRTLegacy.dll</HintPath>
     </Reference>
@@ -137,33 +137,27 @@
     </Reference>
     <Content Include="Data\**" />
   </ItemGroup>
-
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs, Version=12.0">
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
     </SDKReference>
   </ItemGroup>
-
   <ItemGroup>
-
     <Reference Include="UnityPlayer, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Players\WindowsPhone81\$(PlatformTarget)\$(Configuration)\UnityPlayer.winmd</HintPath>
       <Implementation>UnityPlayer.dll</Implementation>
     </Reference>
-
     <Reference Include="BridgeInterface, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Players\WindowsPhone81\$(PlatformTarget)\$(Configuration)\BridgeInterface.winmd</HintPath>
       <Implementation>BridgeInterface.dll</Implementation>
     </Reference>
-
     <Reference Include="UnityEngineDelegates, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Players\WindowsPhone81\$(PlatformTarget)\$(Configuration)\UnityEngineDelegates.winmd</HintPath>
       <Implementation>UnityEngineDelegates.dll</Implementation>
     </Reference>
-
     <Reference Include="WinRTBridge">
       <HintPath>..\Players\WindowsPhone81\$(PlatformTarget)\$(Configuration)\WinRTBridge.winmd</HintPath>
     </Reference>
@@ -171,16 +165,12 @@
       <HintPath>..\Players\WindowsPhone81\$(PlatformTarget)\$(Configuration)\UnityEngineProxy.dll</HintPath>
     </Reference>
   </ItemGroup>
-
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
   </PropertyGroup>
-
-
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <ItemGroup>
     <UnprocessedFile Include="$(ProjectDir)Unprocessed\*" />
@@ -194,10 +184,10 @@
   </Target>
   <Target Name="BeforeCompile">
     <PropertyGroup Condition=" '$(Configuration)' == 'Master' ">
-       <RemoveDebuggableAttribute>True</RemoveDebuggableAttribute>
+      <RemoveDebuggableAttribute>True</RemoveDebuggableAttribute>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)' != 'Master' ">
-       <RemoveDebuggableAttribute>False</RemoveDebuggableAttribute>
+      <RemoveDebuggableAttribute>False</RemoveDebuggableAttribute>
     </PropertyGroup>
     <Message Importance="high" Text="Running AssemblyConverter..." />
     <Exec Command="&quot;$(UnityWSAToolsDir)\AssemblyConverter.exe&quot; -platform=wp81 -path=&quot;.&quot; -path=&quot;..\Players\WindowsPhone81\$(PlatformTarget)\$(Configuration)&quot; &quot;$(ProjectDir)Assembly-CSharp-firstpass.dll&quot; &quot;$(ProjectDir)Assembly-CSharp.dll&quot; &quot;$(ProjectDir)UnityEngine.dll&quot; &quot;$(ProjectDir)UnityEngine.UI.dll&quot; &quot;$(ProjectDir)UnityEngine.Networking.dll&quot;" />

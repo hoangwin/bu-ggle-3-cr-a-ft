@@ -16,9 +16,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using VungleSDK;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 using UnityPlayer;
+using Windows.ApplicationModel.Core;
 
 namespace Bubble_Shooter_Craft_Style
 {
@@ -32,8 +33,8 @@ namespace Bubble_Shooter_Craft_Style
 		private SplashScreen splash;
 		private Rect splashImageRect;
 		private WindowSizeChangedEventHandler onResizeHandler;
-
-		public MainPage()
+        VungleAd sdkInstance;
+        public MainPage()
 		{
 			this.InitializeComponent();
 			NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
@@ -42,7 +43,7 @@ namespace Bubble_Shooter_Craft_Style
 			// Setup scripting bridge
 			_bridge = new WinRTBridge.WinRTBridge();
 			appCallbacks.SetBridge(_bridge);
-
+            WP8Statics.WP8FunctionHandleShowAds += WP8Statics_ShowAds;
 			appCallbacks.RenderingStarted += () => { RemoveSplashScreen(); };
 
 #if !UNITY_WP_8_1
@@ -58,17 +59,44 @@ namespace Bubble_Shooter_Craft_Style
 			onResizeHandler = new WindowSizeChangedEventHandler((o, e) => OnResize());
 			Window.Current.SizeChanged += onResizeHandler;
 
+
+            sdkInstance = AdFactory.GetInstance("56dc034016ab53e11800001a");
+            sdkInstance.OnAdPlayableChanged += SdkInstance_OnAdPlayableChanged;
+
+
 #if UNITY_WP_8_1
-			SetupLocationService();
+            SetupLocationService();
 #endif
 		}
+        //Event handler for OnAdPlayableChanged event
+        private async void SdkInstance_OnAdPlayableChanged(object sender, AdPlayableEventArgs e)
+        {
+            //Run asynchronously on the UI thread
+            await CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+            new DispatchedHandler(() => someMethod()));
+        }
+        void WP8Statics_ShowAds(object sender, EventArgs e)
+        {
+           
+            ShowAdsVungleFull();
+         
+        }
+		  async void ShowAdsVungleFull()
+        {
+            await sdkInstance.PlayAdAsync(new AdConfig { Incentivized = true, SoundEnabled = false });
 
-		/// <summary>
-		/// Invoked when this page is about to be displayed in a Frame.
-		/// </summary>
-		/// <param name="e">Event data that describes how this page was reached.  The Parameter
-		/// property is typically used to configure the page.</param>
-		protected override void OnNavigatedTo(NavigationEventArgs e)
+        }
+        private void someMethod()//khong de lam gi ca
+        {
+            //Change IsEnabled property for each button
+           
+        }
+        /// <summary>
+        /// Invoked when this page is about to be displayed in a Frame.
+        /// </summary>
+        /// <param name="e">Event data that describes how this page was reached.  The Parameter
+        /// property is typically used to configure the page.</param>
+        protected override void OnNavigatedTo(NavigationEventArgs e)
 		{
 			splash = (SplashScreen)e.Parameter;
 			OnResize();

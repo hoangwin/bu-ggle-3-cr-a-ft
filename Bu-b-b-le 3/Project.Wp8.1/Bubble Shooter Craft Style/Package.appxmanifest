@@ -17,7 +17,8 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="40f5d899-5b3b-470f-ab84-23b20770bbc0.App">
       <m3:VisualElements DisplayName="Bubble Shooter Craft Style" Square150x150Logo="Assets\MediumTile.png" Square44x44Logo="Assets\AppIcon.png" Description="Bubble 3" ForegroundText="light" BackgroundColor="transparent">
-        <m3:DefaultTile DefaultSize="square150x150Logo" Square71x71Logo="Assets\SmallTile.png" />
+        <m3:DefaultTile DefaultSize="square150x150Logo" Square71x71Logo="Assets\SmallTile.png">
+        </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#222C37" />
         <m3:InitialRotationPreference>
           <m3:Rotation Preference="portrait" />
@@ -25,4 +26,7 @@
       </m3:VisualElements>
     </Application>
   </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+  </Capabilities>
 </Package>
