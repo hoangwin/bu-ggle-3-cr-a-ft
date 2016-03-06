@@ -1,0 +1,16 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\assembly-csharp-firstpass.dll" HashGuid="0585cfbe-ae52-ab37-ed4c-f7dd10bc7c6b" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\assembly-csharp.dll" HashGuid="b041b4dc-9a03-60e1-c029-5e135342e22b" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\bridgeinterface.winmd" HashGuid="b2825135-e82a-685b-155d-9390f035e91b" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.dll" HashGuid="b01575e2-2a84-2430-c4ad-618664c9d117" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.networking.dll" HashGuid="f83acc98-d999-36a6-63b7-c239ffc3e8b2" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.ui.dll" HashGuid="bc2d3a0e-20f3-6fc6-22ef-be587d954eb0" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\unityenginedelegates.winmd" HashGuid="a758cda9-20bf-3e09-bb41-ffa443958e6c" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\unityengineproxy.dll" HashGuid="9bd381b4-6efe-1127-7105-c0a8a5e5a51a" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\unityplayer.winmd" HashGuid="8c836450-9092-a4a7-7eb9-924b53c4e59d" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\winrtbridge.winmd" HashGuid="dcc7bc41-5ce6-d823-55b0-39d5964b0aff" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\winrtlegacy.dll" HashGuid="a92ae7c7-8629-c9e0-a1dc-00d485a89d94" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

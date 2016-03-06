@@ -1,0 +1,8 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityInstallationDir>C:\Program Files\Unity5.3\Editor</UnityInstallationDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity5.3\Editor\Data\PlaybackEngines\MetroSupport</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(SolutionDir)Unity\Tools</UnityWSAToolsDir>
+        <UnityProjectDir>F:\github\bu-ggle-3-cr-a-ft\Bu-b-b-le 3</UnityProjectDir>
+    </PropertyGroup>
+</Project>
