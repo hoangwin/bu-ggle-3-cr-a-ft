@@ -41,11 +41,18 @@ public class UnityPlayerActivity extends Activity
 		getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
 
 		mUnityPlayer = new UnityPlayer(this);
-		setContentView(mUnityPlayer);
+		View playerView = mUnityPlayer.getView();
+		// setContentView(mUnityPlayer);
+
 		mUnityPlayer.requestFocus();
+		instance = this;
+		layout = new FrameLayout(this);
+		layout.setPadding(0, 0, 0, 0);
+		setContentView(layout);
+		layout.addView(playerView);
 	}
 
-	public static int ShowAds() {
+	public static int ShowAdsFull() {
 		UnityPlayerActivity.loadInterstitialAdFaceBook(instance);
 		// ShowAdsBackup();
 		// instance.ShowAdmobFull();
@@ -125,7 +132,7 @@ public class UnityPlayerActivity extends Activity
 							@Override
 							public void onAdLoaded(com.facebook.ads.Ad ad) {
 								Log.e("TOAN", "onAdLoaded: ");
-								interstitialFaceBook.show();
+								interstitialFaceBook.show();								
 							}
 
 							@Override

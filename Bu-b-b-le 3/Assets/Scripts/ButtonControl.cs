@@ -55,12 +55,20 @@ public class ButtonControl : MonoBehaviour {
 	public void ButtonRatePress()
 	{
         SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);
+#if UNITY_ANDROID
         Application.OpenURL ("market://details?id=com.lamstudio.bubble.craft");
-		//Application.OpenURL ("http://details?id=com.flappy.bird.kiwi");
-	}
-	
+        //Application.OpenURL ("http://details?id=com.flappy.bird.kiwi");
+#elif UNITY_IOS
+        Application.OpenURL ("https://itunes.apple.com/us/app/bubble-shooter-craft-style/id1090645861?ls=1&mt=8");
+        
+#else 
+       WP8Statics.RateApp("Test");
 
-	public void ButtonSoundPress()
+#endif
+    }
+
+
+    public void ButtonSoundPress()
 	{
 		SoundEngine.isSoundSFX = !SoundEngine.isSoundSFX;
         SoundEngine.playBubbleEffect(SoundEngine.instance.m_click);

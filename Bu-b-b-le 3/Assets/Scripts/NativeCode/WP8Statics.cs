@@ -9,6 +9,7 @@ public static class WP8Statics
     public static event System.EventHandler WP8FunctionHandleStopAds;//StopAds
     public static event System.EventHandler WP8FunctionHandleShowAds;//StopAds
     public static event System.EventHandler WP8FunctionHandleShowAdsBanner;//StopAds
+	public static event System.EventHandler WP8FunctionHandleRateApp;//StopAds
     
     
     public static void StopAds(string str)
@@ -37,6 +38,14 @@ public static class WP8Statics
         if (WP8FunctionHandleShowAdsBanner != null)
         {
             WP8FunctionHandleShowAdsBanner(str, null);
+        }
+    }
+	 public static void RateApp(string str)
+    {
+        if (WP8FunctionHandleRateApp != null)
+        {
+
+            WP8FunctionHandleRateApp(str, null);
         }
     }
 }

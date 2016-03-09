@@ -11,7 +11,7 @@ public class AdsManager : MonoBehaviour
     //--------------------------------------
     //  EVE
     public static void ShowADS_FULL()
-    {  
+    {
 #if UNITY_ANDROID
         /*
         if (timeShowAds > 80 || !firstShowAdsFull)
@@ -41,7 +41,7 @@ public class AdsManager : MonoBehaviour
             }
         }
             
-#elif UNITY_WP8
+#elif UNITY_WP8 || UNITY_WSA
         if (timeShowAds > 90 || !firstShowAdsFull)
         {
             firstShowAdsFull = true;
@@ -54,7 +54,7 @@ public class AdsManager : MonoBehaviour
         {
             firstShowAdsFull = true;
             timeShowAds = 0;
-            IOsStatic.ShowAdsFull(" ", " ");
+            IOsStatic.ShowAds(" ", " ");
         }
 #endif
 

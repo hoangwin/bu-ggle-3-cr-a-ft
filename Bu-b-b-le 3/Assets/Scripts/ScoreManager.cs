@@ -16,7 +16,7 @@ public class ScoreManager : MonoBehaviour {
     {
         m_LevelUNblock = new SuperInt(1, "UNLOCK_STAGE");        
         m_LevelUNblock.Load();
-        m_LevelUNblock.NUM = 670;
+     //   m_LevelUNblock.NUM = 670;
     }
     public static void Save()
     {        
