@@ -61,7 +61,7 @@ namespace Bubble_Shooter_Craft_Style
 
 
             sdkInstance = AdFactory.GetInstance("56dc034016ab53e11800001a");
-            sdkInstance.OnAdPlayableChanged += SdkInstance_OnAdPlayableChanged;
+        //    sdkInstance.OnAdPlayableChanged += SdkInstance_OnAdPlayableChanged;
 
 
 #if UNITY_WP_8_1
@@ -69,12 +69,12 @@ namespace Bubble_Shooter_Craft_Style
 #endif
 		}
         //Event handler for OnAdPlayableChanged event
-        private async void SdkInstance_OnAdPlayableChanged(object sender, AdPlayableEventArgs e)
-        {
+//private async void SdkInstance_OnAdPlayableChanged(object sender, AdPlayableEventArgs e)
+     //   {
             //Run asynchronously on the UI thread
-            await CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
-            new DispatchedHandler(() => someMethod()));
-        }
+     //       await CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+      //      new DispatchedHandler(() => someMethod()));
+      //  }
         void WP8Statics_ShowAds(object sender, EventArgs e)
         {
            
@@ -86,11 +86,11 @@ namespace Bubble_Shooter_Craft_Style
             await sdkInstance.PlayAdAsync(new AdConfig { Incentivized = true, SoundEnabled = false });
 
         }
-        private void someMethod()//khong de lam gi ca
-        {
+    //    private void someMethod()//khong de lam gi ca
+      //  {
             //Change IsEnabled property for each button
            
-        }
+     //   }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>

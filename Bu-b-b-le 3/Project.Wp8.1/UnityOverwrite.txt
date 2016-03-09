@@ -5,18 +5,107 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\App.xaml: F3E3DD8685E2EA0FF274DCB63F1D6B3C
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\App.xaml.cpp: 3C368D1306E0DCE197B832A0544AD3B1
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\App.xaml.h: F0343424352E54927885E9151CAA4083
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\MainPage.xaml: D8EC9D1C99C501382094B59345D68B00
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\MainPage.xaml.cpp: 9473C6D2F758FFC6D924885E9888FF34
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\MainPage.xaml.h: 21BD81F2FF896A0BEFCAD3D192DACACA
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\Package.appxmanifest: 4BD15101A768B675285C53E04D07AB8B
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\Assets\SmallLogo.scale-100.png: 23C3B58B4CDF58FB2C8DD856BABB4DB7
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\Assets\SplashScreen.scale-100.png: 5D43274744E9812D4F1E3E2653854FE4
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\Assets\StoreLogo.scale-100.png: 03E3D03832D25168141854A153B16A44
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\Generated Files\App.xaml: D404A94D7BB166F3CB2699F7CB7C941F
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CPP_sample_Windows8.1\Generated Files\MainPage.xaml: 400F227A6BC00D34A2D9D2D5F8A121ED
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\App.xaml: EBA1CC5BF063F074860174F7B6614CCD
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\App.xaml.cs: 26B23440515119C88A994F093045CB54
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\MainPage.xaml: C6C339D37B7A242FA457EFBAC2FF8270
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\MainPage.xaml.cs: 7FB99A28C95146A83FE8027EBC5F7EF9
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\Package.appxmanifest: A5C61B9F8FA2D4EC6568A6731BFF0A9B
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\Assets\SmallLogo.scale-100.png: 23C3B58B4CDF58FB2C8DD856BABB4DB7
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\Assets\SplashScreen.scale-100.png: 5D43274744E9812D4F1E3E2653854FE4
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\Assets\StoreLogo.scale-100.png: 03E3D03832D25168141854A153B16A44
+ads\vungle-windows-sdk-1.1.6\Windows 8.1 Samples\CS_sample_Windows8.1\Properties\AssemblyInfo.cs: DAE1F01BD68655B62A4F4201832115AE
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\App.xaml: 01C9904737936C88E46FA209FE681C9F
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\App.xaml.cpp: 83D58823EAA8F403015F11000FED0690
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\App.xaml.h: 5ADEEFC98024F69E25DD4F95FE13087D
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\MainPage.xaml: 7025113B5DC0F8ED2D2C20734A2401B6
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\MainPage.xaml.cpp: 10E09A17989EC9A6A75A16D4CB4FCEB1
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\MainPage.xaml.h: 9008CEEDBFA6B851CF965044B043D55F
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\Package.appxmanifest: 873AE6FBBAFC6806C718A0E282D976A8
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\Assets\SplashScreen.scale-240.png: A41A98643D8F812367F0F8FCA9A47A07
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\Assets\StoreLogo.scale-240.png: DD468BF55CB881DC7B3E90DB65EE39A6
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\Generated Files\App.xaml: 747B748B887863234F7BD12E0BC514BA
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CPP_sample_WP8.1\Generated Files\MainPage.xaml: 0DDAA9C1FD8E61DBE9ADFC9489CEA098
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\App.xaml: 222795C1CF487FEDE2D9C1A66F82D345
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\App.xaml.cs: D1041579E3076BD48E5E96748DD71951
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\MainPage.xaml: 6C19DA742237A1AD36586DC5554D7A38
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\MainPage.xaml.cs: 65BDD40223397A070B8ACC2E2601A204
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\Package.appxmanifest: 919FF9E676ED2E6D9871DBC066C9DF47
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\Assets\SplashScreen.scale-240.png: A41A98643D8F812367F0F8FCA9A47A07
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\Assets\StoreLogo.scale-240.png: DD468BF55CB881DC7B3E90DB65EE39A6
+ads\vungle-windows-sdk-1.1.6\Windows Phone 8.1 Samples\CS_sample_WP8.1\Properties\AssemblyInfo.cs: 8996B8CD673B4C0C96E15CC74FFE6F3B
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\App.xaml: 44CD807300C16022B673FC5B204C7CAA
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\App.xaml.cpp: CC79C3488D26E23501C77445239E1D0B
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\App.xaml.h: C03787226A117B21FA40DC2F8EAA81FC
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\MainPage.xaml: 41D6ADB3C1BB08AE8B2DD34B781AD9B8
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\MainPage.xaml.cpp: E2A6CF734C483B162909EDDDC628E503
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\MainPage.xaml.h: 93AE73A4E3A574A25462A5F5BC6B2366
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Package.appxmanifest: F787D863D2DBEB6408F470A2335CDBDA
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Assets\Square150x150Logo.scale-200.png: 1ABEE8855977B56E9B5559951947DFD2
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Assets\Square44x44Logo.scale-200.png: BA4903EB7B32A12ED1101F73F4A3035C
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: F8025ACA886992B4F6DBAE7D1FA05826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Assets\StoreLogo.png: 3B0FD2D8BB385FDF5035D66BE31076C6
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Assets\Wide310x150Logo.scale-200.png: C34B2E6AEE8CCD42E0955A6D5E623E1B
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Generated Files\App.xaml: F4C0CB34926239BCB8D1F7612FA0F663
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CPP_sample\Generated Files\MainPage.xaml: D6BD84D43A88D4FA7D718188B0A62F21
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\App.xaml: 261DE1CA5F71E326B160A076B57053F1
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\App.xaml.cs: 9B811B93BEF920C42309CA6B8928FAC7
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\MainPage.xaml: CEB58D8B05D472E0CBF66DD4618BDE26
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\MainPage.xaml.cs: 3866810C4CC6537C1EB49C23E7045350
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Package.appxmanifest: 02A92B26149A2C0EF0D183D10E8AC07F
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\project.json: 88AA7FF964823F6407718C34CA0DFE19
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Assets\Square150x150Logo.scale-200.png: 1ABEE8855977B56E9B5559951947DFD2
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Assets\Square44x44Logo.scale-200.png: BA4903EB7B32A12ED1101F73F4A3035C
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: F8025ACA886992B4F6DBAE7D1FA05826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Assets\StoreLogo.png: 3B0FD2D8BB385FDF5035D66BE31076C6
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Assets\Wide310x150Logo.scale-200.png: C34B2E6AEE8CCD42E0955A6D5E623E1B
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\CS_sample\Properties\AssemblyInfo.cs: B4FB55170377526E6A94138CDF0855CC
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\App.xaml: EEABB4BD22A3F9BF98AA8CD7F7C7EA40
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\App.xaml.cpp: FEC594964033A9E85EEB5B3CEC6BD0B3
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\App.xaml.h: 8C46DD5B51173B7C29FF23929586EB4C
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Package.appxmanifest: EE5E8E9A46DEFB9519031C0A2818B23D
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Assets\Square150x150Logo.scale-200.png: 1ABEE8855977B56E9B5559951947DFD2
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Assets\Square44x44Logo.scale-200.png: BA4903EB7B32A12ED1101F73F4A3035C
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: F8025ACA886992B4F6DBAE7D1FA05826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Assets\StoreLogo.png: 3B0FD2D8BB385FDF5035D66BE31076C6
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Assets\Wide310x150Logo.scale-200.png: C34B2E6AEE8CCD42E0955A6D5E623E1B
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\DirectX_XAML_sample\Generated Files\App.xaml: 9B24EF47AF9569DC8491D5A1022D3311
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\App.xaml: 2819DBC4277810C30A63F6193E08E44A
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\App.xaml.vb: 07378E0342926957CB3D549254CD3993
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\MainPage.xaml: F0BF3D953B145AD5FDFB14FEEEB954D5
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\MainPage.xaml.vb: 73A788E8D515BAC65951303BFDA753B0
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Package.appxmanifest: 88B73909FEA5B1210DC249B98D243F92
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\project.json: 88AA7FF964823F6407718C34CA0DFE19
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\Square150x150Logo.scale-200.png: 1ABEE8855977B56E9B5559951947DFD2
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\Square44x44Logo.scale-200.png: BA4903EB7B32A12ED1101F73F4A3035C
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: F8025ACA886992B4F6DBAE7D1FA05826
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\StoreLogo.png: 3B0FD2D8BB385FDF5035D66BE31076C6
+ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\Wide310x150Logo.scale-200.png: C34B2E6AEE8CCD42E0955A6D5E623E1B
 Bubble Shooter Craft Style\App.xaml: BB718C3D4780C82D21AAF13F8284ABC0
 Bubble Shooter Craft Style\App.xaml.cs: EB72AFE8CAED5572AA2734C9479FE007
 Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj: 3EFE170C9CC81AD6D245A06A8232AC3E
-Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj.user: modified
+Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj.user: FB926ECD959CF4570A46589B682314D2
 Bubble Shooter Craft Style\MainPage.xaml: F630AD1ED94D9A482EA44BDF1869FAA9
 Bubble Shooter Craft Style\MainPage.xaml.cs: E1C4E1234D8718B20925BAE49E6EFACA
-Bubble Shooter Craft Style\Package.appxmanifest: 721BBE0DB58021D34A0B82CB0577AC43
+Bubble Shooter Craft Style\Package.appxmanifest: 0B464E40113FDCC1B4235BEEF5931C34
 Bubble Shooter Craft Style\Assets\AppIcon.scale-240.png: 60EB3E7035084028856B302B4C5D37D9
 Bubble Shooter Craft Style\Assets\MediumTile.scale-240.png: 0BD444393237BC81153A2865401B76BA
 Bubble Shooter Craft Style\Assets\SmallTile.scale-240.png: E1B765DE62B342A217CDBC1A72126E1F
 Bubble Shooter Craft Style\Assets\SplashScreen.scale-240.png: E1E50058E243AAD2E1D4562F36A4EC12
 Bubble Shooter Craft Style\Assets\StoreLogo.scale-240.png: 668F2F20A066DFB197AEB7CB8A5C9702
-Bubble Shooter Craft Style\obj\ARM\Master\App.xaml: 7E5570618AFE631172F8894EBC4751F5
-Bubble Shooter Craft Style\obj\ARM\Master\MainPage.xaml: CE807D79D116674C848BCB6C80A1957A
 Bubble Shooter Craft Style\Properties\AssemblyInfo.cs: 8DDBC3E2A35AB0F9FAED1B52759935C9
