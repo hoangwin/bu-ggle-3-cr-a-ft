@@ -40,12 +40,13 @@ public static class WP8Statics
             WP8FunctionHandleShowAdsBanner(str, null);
         }
     }
-	 public static void RateApp(string str)
+	 public  static  void RateApp(string str)
     {
         if (WP8FunctionHandleRateApp != null)
         {
 
             WP8FunctionHandleRateApp(str, null);
+            
         }
     }
 }

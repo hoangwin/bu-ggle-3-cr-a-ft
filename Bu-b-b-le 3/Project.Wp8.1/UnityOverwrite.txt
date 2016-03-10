@@ -98,14 +98,18 @@ ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\StoreLog
 ads\vungle-windows-sdk-1.1.6\Windows Universal Samples\VB_sample\Assets\Wide310x150Logo.scale-200.png: C34B2E6AEE8CCD42E0955A6D5E623E1B
 Bubble Shooter Craft Style\App.xaml: BB718C3D4780C82D21AAF13F8284ABC0
 Bubble Shooter Craft Style\App.xaml.cs: EB72AFE8CAED5572AA2734C9479FE007
-Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj: 3EFE170C9CC81AD6D245A06A8232AC3E
-Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj.user: FB926ECD959CF4570A46589B682314D2
+Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj: modified
+Bubble Shooter Craft Style\Bubble Shooter Craft Style.csproj.user: modified
 Bubble Shooter Craft Style\MainPage.xaml: F630AD1ED94D9A482EA44BDF1869FAA9
-Bubble Shooter Craft Style\MainPage.xaml.cs: E1C4E1234D8718B20925BAE49E6EFACA
-Bubble Shooter Craft Style\Package.appxmanifest: 0B464E40113FDCC1B4235BEEF5931C34
-Bubble Shooter Craft Style\Assets\AppIcon.scale-240.png: 60EB3E7035084028856B302B4C5D37D9
-Bubble Shooter Craft Style\Assets\MediumTile.scale-240.png: 0BD444393237BC81153A2865401B76BA
-Bubble Shooter Craft Style\Assets\SmallTile.scale-240.png: E1B765DE62B342A217CDBC1A72126E1F
-Bubble Shooter Craft Style\Assets\SplashScreen.scale-240.png: E1E50058E243AAD2E1D4562F36A4EC12
-Bubble Shooter Craft Style\Assets\StoreLogo.scale-240.png: 668F2F20A066DFB197AEB7CB8A5C9702
+Bubble Shooter Craft Style\MainPage.xaml.cs: modified
+Bubble Shooter Craft Style\Package.appxmanifest: modified
+Bubble Shooter Craft Style\Assets\AppIcon.scale-240.png: modified
+Bubble Shooter Craft Style\Assets\MediumTile.scale-240.png: modified
+Bubble Shooter Craft Style\Assets\SmallTile.scale-240.png: modified
+Bubble Shooter Craft Style\Assets\SplashScreen.scale-240.png: modified
+Bubble Shooter Craft Style\Assets\StoreLogo.scale-240.png: modified
+Bubble Shooter Craft Style\obj\ARM\Debug\App.xaml: 7E5570618AFE631172F8894EBC4751F5
+Bubble Shooter Craft Style\obj\ARM\Debug\MainPage.xaml: CE807D79D116674C848BCB6C80A1957A
+Bubble Shooter Craft Style\obj\ARM\Master\App.xaml: 7E5570618AFE631172F8894EBC4751F5
+Bubble Shooter Craft Style\obj\ARM\Master\MainPage.xaml: CE807D79D116674C848BCB6C80A1957A
 Bubble Shooter Craft Style\Properties\AssemblyInfo.cs: 8DDBC3E2A35AB0F9FAED1B52759935C9

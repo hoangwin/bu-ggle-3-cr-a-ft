@@ -1,13 +1,13 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\obj\arm\debug\intermediatexaml\bubble shooter craft style.exe" HashGuid="614055de-6261-d6ce-6bb5-10ba42fcf939" />
+    <LocalAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\obj\arm\debug\intermediatexaml\bubble shooter craft style.exe" HashGuid="a13a0366-341a-63d5-9b95-9abac1b3e52b" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
-    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\assembly-csharp-firstpass.dll" HashGuid="d02cdb83-6210-68af-8f90-4364e91c5257" />
-    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\assembly-csharp.dll" HashGuid="40e97d5d-25fe-982c-0350-4af74862ef06" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\assembly-csharp-firstpass.dll" HashGuid="11313522-d7bc-aa2f-d633-c07c7acd4ac3" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\assembly-csharp.dll" HashGuid="36151c23-235d-2635-0842-fb9f1a7b90a2" />
     <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\bridgeinterface.winmd" HashGuid="5a4d144f-2a01-a848-b917-61797bb90637" />
-    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.dll" HashGuid="11032003-7474-1290-9cb1-336313b4a051" />
-    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.networking.dll" HashGuid="a6c149b5-7491-c1ab-0a96-aa000359926f" />
-    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.ui.dll" HashGuid="f4efc1f3-2cfb-f517-5575-f546a3ef13ca" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.dll" HashGuid="0b8a2c92-5392-929d-798a-b1a1fef7eabb" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.networking.dll" HashGuid="17f4fda1-5569-17a9-c0e9-f4be19e851dd" />
+    <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\bubble shooter craft style\unityengine.ui.dll" HashGuid="969a132b-70df-344a-1384-b0436c1d05fd" />
     <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\unityenginedelegates.winmd" HashGuid="a758cda9-20bf-3e09-bb41-ffa443958e6c" />
     <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\unityengineproxy.dll" HashGuid="6fb19a6c-71e3-fd92-7aee-1570e96489ac" />
     <ReferenceAssembly PathName="f:\github\bu-ggle-3-cr-a-ft\bu-b-b-le 3\project.wp8.1\players\windowsphone81\arm\debug\unityplayer.winmd" HashGuid="8c836450-9092-a4a7-7eb9-924b53c4e59d" />

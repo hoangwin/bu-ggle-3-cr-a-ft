@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="59369ACEMobile.BubbleShooterCraftStyle" Publisher="CN=0C950188-413A-4C09-BD21-40103480ECA8" Version="1.1.0.1" />
+  <Identity Name="59369ACEMobile.BubbleShooterCraftStyle" Publisher="CN=0C950188-413A-4C09-BD21-40103480ECA8" Version="1.1.0.6" />
   <mp:PhoneIdentity PhoneProductId="2da8777b-8d93-4405-b6e3-e885b6ae7a78" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Bubble Shooter Craft Style</DisplayName>
@@ -29,6 +29,5 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <Capability Name="internetClientServer" />
-    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>

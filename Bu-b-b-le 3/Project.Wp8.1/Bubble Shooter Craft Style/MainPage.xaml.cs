@@ -16,11 +16,12 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
 using VungleSDK;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 using UnityPlayer;
 using Windows.ApplicationModel.Core;
-
+//UnityPlayer.AppCallbacks.Instance.InvokeOnAppThread
 namespace Bubble_Shooter_Craft_Style
 {
 	/// <summary>
@@ -44,6 +45,7 @@ namespace Bubble_Shooter_Craft_Style
 			_bridge = new WinRTBridge.WinRTBridge();
 			appCallbacks.SetBridge(_bridge);
             WP8Statics.WP8FunctionHandleShowAds += WP8Statics_ShowAds;
+            WP8Statics.WP8FunctionHandleRateApp +=WP8Statics_RateApp;
 			appCallbacks.RenderingStarted += () => { RemoveSplashScreen(); };
 
 #if !UNITY_WP_8_1
@@ -86,6 +88,22 @@ namespace Bubble_Shooter_Craft_Style
             await sdkInstance.PlayAdAsync(new AdConfig { Incentivized = true, SoundEnabled = false });
 
         }
+         async void WP8Statics_RateApp(object sender, EventArgs e)
+          {
+              //MarketplaceReviewTask marketplaceReviewTask = new MarketplaceReviewTask();
+             // marketplaceReviewTask.Show();
+              //await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp"));
+              //await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp?appid=" + Windows.ApplicationModel.Store.CurrentApp.AppId));
+
+              
+                  await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp?appid=" + Windows.ApplicationModel.Store.CurrentApp.AppId));
+
+              
+              
+              // Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp?appid=" + Windows.ApplicationModel.Store.CurrentApp.AppId));
+             
+          }
+
     //    private void someMethod()//khong de lam gi ca
       //  {
             //Change IsEnabled property for each button

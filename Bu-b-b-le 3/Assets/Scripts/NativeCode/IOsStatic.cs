@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_IOS
+using UnityEngine;
 using System.Collections;
 using System.Runtime.InteropServices;
 public class IOsStatic : MonoBehaviour {
@@ -19,3 +20,4 @@ public class IOsStatic : MonoBehaviour {
     }
 
 }
+#endif
