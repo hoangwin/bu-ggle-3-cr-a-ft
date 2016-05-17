@@ -46,9 +46,14 @@ public class ButtonControl : MonoBehaviour {
 	}
 	public void ButtonRatePress()
 	{
-		Application.OpenURL ("market://details?id=com.smashy.reverse.crosy");
+#if UNITY_ANDROID
+        Application.OpenURL ("market://details?id=com.smashy.reverse.crosy");
         //Application.OpenURL ("http://details?id=com.smashy.reverse.crosy");
+#elif UNITY_IOS
+        Application.OpenURL("https://itunes.apple.com/us/app/crossy-reverse/id1114686286?ls=1&mt=8");
+#endif
     }
+
 
 
 
