@@ -52,7 +52,7 @@ public class UnityPlayerActivity extends Activity
 	public static int ShowAdsFull() {
 		UnityPlayerActivity.loadInterstitialAdFaceBook(instance);
 		// ShowAdsBackup();
-		// instance.ShowAdmobFull();
+		//  instance.ShowAdmobFull();
 		return 1;
 	}
 	public void showBannerFaceBook() {

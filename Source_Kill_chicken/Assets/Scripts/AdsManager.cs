@@ -35,7 +35,7 @@ public class AdsManager : MonoBehaviour
         {
             firstShowAdsFull = true;
             timeShowAds = 0;
-            using (AndroidJavaClass jc = new AndroidJavaClass("com.lamstudio.bubble.craft.UnityPlayerActivity"))
+            using (AndroidJavaClass jc = new AndroidJavaClass("com.smashy.crossy.reverse.UnityPlayerActivity"))
             {
                 jc.CallStatic<int>("ShowAdsFull");
             }

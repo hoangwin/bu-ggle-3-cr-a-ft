@@ -110,9 +110,6 @@ public class GamePlay : MonoBehaviour {
 				Destroy(obj,1);
 			}
 		}
-
-		
-
 	}
 	
 	void FixedUpdate()
